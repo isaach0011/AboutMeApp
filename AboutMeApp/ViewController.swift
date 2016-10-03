@@ -20,6 +20,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBOutlet private var aboutMeText: UILabel!
+    @IBOutlet private var myName: UILabel!
 
+    @IBAction func changeScreenToIndex(sender: UIButton)
+    {
+        performSegueWithIdentifier("", sender: sender)
+    }
 }
 

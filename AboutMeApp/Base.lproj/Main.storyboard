@@ -16,12 +16,39 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.17716585170469912" green="1" blue="0.97228941753159126" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLX-7E-ohq">
+                                <rect key="frame" x="199" y="41" width="203" height="48"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="44"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Isaac Hill" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Era-uT-3Xm">
+                                <rect key="frame" x="245" y="103" width="111" height="30"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="26"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIE-1P-h2M">
+                                <rect key="frame" x="245" y="460" width="111" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="changeScreenToIndex:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1sc-id-d3S"/>
+                                    <segue destination="Q2V-C7-dbA" kind="show" identifier="toIndexFromMain" id="eV8-Sh-sBJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.49808498637938869" blue="0.5295425994143963" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="aboutMeText" destination="zLX-7E-ohq" id="Mp8-Ng-6I0"/>
+                        <outlet property="myName" destination="Era-uT-3Xm" id="mLx-kM-o9e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-293" y="425"/>
+            <point key="canvasLocation" x="414" y="21"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="3Ey-0D-hed">
@@ -34,7 +61,7 @@
                     <view key="view" contentMode="scaleToFill" id="i1Y-HQ-ItT">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.17172713165805453" green="1" blue="0.98956964073936649" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.57494058590229824" green="0.72600829109730314" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GqL-8y-wMF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -52,12 +79,12 @@
                     <view key="view" contentMode="scaleToFill" id="nPV-t8-VdB">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.17172713165805453" green="1" blue="0.98956964073936649" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.71395350855816853" blue="0.52313986880785057" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XAL-fd-2rE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="414" y="1586"/>
+            <point key="canvasLocation" x="1121" y="425"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="igK-Bn-cpf">
@@ -70,12 +97,12 @@
                     <view key="view" contentMode="scaleToFill" id="Bf1-sa-Ywe">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.21340626530200557" green="0.98982314003307093" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.79309024397241301" green="0.66029356824185936" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uhv-MH-yeH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="414" y="53"/>
+            <point key="canvasLocation" x="-293" y="425"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="WSy-K4-8zR">
@@ -88,12 +115,12 @@
                     <view key="view" contentMode="scaleToFill" id="rrC-WP-Si1">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.24632460764012631" green="1" blue="0.95324916551119432" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.52717477984171968" green="1" blue="0.43309023221819287" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TkD-TG-8za" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1137" y="1232"/>
+            <point key="canvasLocation" x="414" y="1644"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Z1t-oZ-z08">
@@ -106,12 +133,12 @@
                     <view key="view" contentMode="scaleToFill" id="FVG-k8-Qnr">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.21340626530200557" green="0.98982314003307093" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.95170243573936242" blue="0.44614054727498675" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ake-dS-DVI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1137" y="425"/>
+            <point key="canvasLocation" x="1121" y="1232"/>
         </scene>
     </scenes>
 </document>

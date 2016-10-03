@@ -12,6 +12,11 @@
 		BF32CC2D1DA2E0A7005413F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF32CC2B1DA2E0A7005413F0 /* Main.storyboard */; };
 		BF32CC2F1DA2E0A7005413F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF32CC2E1DA2E0A7005413F0 /* Assets.xcassets */; };
 		BF32CC321DA2E0A7005413F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF32CC301DA2E0A7005413F0 /* LaunchScreen.storyboard */; };
+		BF32CC3A1DA2E34F005413F0 /* CareerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF32CC391DA2E34F005413F0 /* CareerViewController.swift */; };
+		BF32CC3C1DA2E364005413F0 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF32CC3B1DA2E364005413F0 /* FriendsViewController.swift */; };
+		BF32CC3E1DA2E376005413F0 /* HobbiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF32CC3D1DA2E376005413F0 /* HobbiesViewController.swift */; };
+		BF32CC421DA2E3A6005413F0 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF32CC411DA2E3A6005413F0 /* IndexViewController.swift */; };
+		BF32CC441DA2E3BC005413F0 /* PastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF32CC431DA2E3BC005413F0 /* PastViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		BF32CC2E1DA2E0A7005413F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF32CC311DA2E0A7005413F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF32CC331DA2E0A7005413F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF32CC391DA2E34F005413F0 /* CareerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CareerViewController.swift; path = Controller/CareerViewController.swift; sourceTree = "<group>"; };
+		BF32CC3B1DA2E364005413F0 /* FriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendsViewController.swift; path = Controller/FriendsViewController.swift; sourceTree = "<group>"; };
+		BF32CC3D1DA2E376005413F0 /* HobbiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HobbiesViewController.swift; path = Controller/HobbiesViewController.swift; sourceTree = "<group>"; };
+		BF32CC411DA2E3A6005413F0 /* IndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndexViewController.swift; path = Controller/IndexViewController.swift; sourceTree = "<group>"; };
+		BF32CC431DA2E3BC005413F0 /* PastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PastViewController.swift; path = Controller/PastViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,11 @@
 				BF32CC2E1DA2E0A7005413F0 /* Assets.xcassets */,
 				BF32CC301DA2E0A7005413F0 /* LaunchScreen.storyboard */,
 				BF32CC331DA2E0A7005413F0 /* Info.plist */,
+				BF32CC391DA2E34F005413F0 /* CareerViewController.swift */,
+				BF32CC3B1DA2E364005413F0 /* FriendsViewController.swift */,
+				BF32CC3D1DA2E376005413F0 /* HobbiesViewController.swift */,
+				BF32CC411DA2E3A6005413F0 /* IndexViewController.swift */,
+				BF32CC431DA2E3BC005413F0 /* PastViewController.swift */,
 			);
 			path = AboutMeApp;
 			sourceTree = "<group>";
@@ -135,8 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF32CC441DA2E3BC005413F0 /* PastViewController.swift in Sources */,
+				BF32CC3C1DA2E364005413F0 /* FriendsViewController.swift in Sources */,
 				BF32CC2A1DA2E0A7005413F0 /* ViewController.swift in Sources */,
+				BF32CC3A1DA2E34F005413F0 /* CareerViewController.swift in Sources */,
 				BF32CC281DA2E0A7005413F0 /* AppDelegate.swift in Sources */,
+				BF32CC3E1DA2E376005413F0 /* HobbiesViewController.swift in Sources */,
+				BF32CC421DA2E3A6005413F0 /* IndexViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
