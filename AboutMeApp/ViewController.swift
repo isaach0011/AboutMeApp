@@ -8,8 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController
+{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -25,7 +25,7 @@ class ViewController: UIViewController {
 
     @IBAction func changeScreenToIndex(sender: UIButton)
     {
-        performSegueWithIdentifier("", sender: sender)
+        performSegueWithIdentifier("toIndexFromMain", sender: sender)
     }
 }
 

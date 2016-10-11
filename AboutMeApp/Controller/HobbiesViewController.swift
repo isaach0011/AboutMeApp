@@ -10,5 +10,12 @@ import UIKit
 
 class HobbiesViewController : UIViewController
 {
-    
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+    }
+    @IBAction func toIndex(sender: UIButton)
+    {
+        performSegueWithIdentifier("toIndexFromHobbies", sender: sender)
+    }
 }

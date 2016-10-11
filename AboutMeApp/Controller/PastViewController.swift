@@ -10,5 +10,12 @@ import UIKit
 
 class PastViewController : UIViewController
 {
-    
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+    }
+    @IBAction func toIndex(sender: UIButton)
+    {
+        performSegueWithIdentifier("toIndexFromPast", sender: sender)
+    }
 }

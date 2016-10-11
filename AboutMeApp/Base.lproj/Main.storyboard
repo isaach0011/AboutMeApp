@@ -43,17 +43,17 @@
                     </view>
                     <connections>
                         <outlet property="aboutMeText" destination="zLX-7E-ohq" id="Mp8-Ng-6I0"/>
-                        <outlet property="myName" destination="Era-uT-3Xm" id="mLx-kM-o9e"/>
+                        <outlet property="myName" destination="Era-uT-3Xm" id="EVy-vl-phN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="452" y="-477"/>
         </scene>
-        <!--Past View Controller-->
+        <!--Hobbies View Controller-->
         <scene sceneID="3Ey-0D-hed">
             <objects>
-                <viewController id="vjK-8H-LmW" customClass="PastViewController" customModule="AboutMeApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vjK-8H-LmW" customClass="HobbiesViewController" customModule="AboutMeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YeT-MM-cXj"/>
                         <viewControllerLayoutGuide type="bottom" id="uL3-Bj-Sh2"/>
@@ -66,18 +66,22 @@
                                 <rect key="frame" x="165" y="546" width="72" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="toIndex:" destination="vjK-8H-LmW" eventType="touchUpInside" id="VWx-rO-P01"/>
+                                    <segue destination="Q2V-C7-dbA" kind="show" identifier="toIndexFromHobbies" id="A4i-WI-Fmd"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hobbies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zr-SM-o0u">
                                 <rect key="frame" x="126" y="20" width="151" height="56"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giI-Nw-yzj">
                                 <rect key="frame" x="29" y="107" width="366" height="113"/>
                                 <string key="text">I like to play with my friends online. I also really enjoy computers and I always want to learn more about them. Another thing I really enjoy is, that I really enjoy drawing in my free time.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="computer" translatesAutoresizingMaskIntoConstraints="NO" id="cxv-OP-41A">
@@ -89,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GqL-8y-wMF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="89" y="1700"/>
+            <point key="canvasLocation" x="781" y="1704"/>
         </scene>
         <!--Index View Controller-->
         <scene sceneID="nhR-US-mRb">
@@ -106,7 +110,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Index" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zzi-AY-xqC">
                                 <rect key="frame" x="158" y="28" width="103" height="46"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phV-np-LgJ">
@@ -114,6 +118,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Career"/>
                                 <connections>
+                                    <action selector="careerButton:" destination="Q2V-C7-dbA" eventType="touchUpInside" id="d5F-WC-xV6"/>
                                     <segue destination="w7D-4Y-RBc" kind="show" identifier="toCareerFromIndex" id="fSr-Yc-0fg"/>
                                 </connections>
                             </button>
@@ -122,6 +127,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Friends"/>
                                 <connections>
+                                    <action selector="friendsButton:" destination="Q2V-C7-dbA" eventType="touchUpInside" id="hFg-BP-fOE"/>
                                     <segue destination="0Wx-bK-u7C" kind="show" identifier="toFriendsFromIndex" id="Mb3-I4-Bk6"/>
                                 </connections>
                             </button>
@@ -130,7 +136,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Hobbies"/>
                                 <connections>
-                                    <segue destination="fw0-iF-XHv" kind="show" identifier="toHobbiesFromIndex" id="03S-pH-R2t"/>
+                                    <action selector="hobbiesButton:" destination="Q2V-C7-dbA" eventType="touchUpInside" id="hKk-Dp-18y"/>
+                                    <segue destination="vjK-8H-LmW" kind="show" identifier="toHobbiesFromIndex" id="Tq9-ai-wTJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRc-yY-AD0">
@@ -138,7 +145,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Past"/>
                                 <connections>
-                                    <segue destination="vjK-8H-LmW" kind="show" identifier="toPastFromIndex" id="YP7-gW-DZH"/>
+                                    <action selector="pastButton:" destination="Q2V-C7-dbA" eventType="touchUpInside" id="aUK-52-K3E"/>
+                                    <segue destination="fw0-iF-XHv" kind="show" identifier="toPastFromIndex" id="Q6y-gM-WW3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -147,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XAL-fd-2rE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="452" y="247"/>
+            <point key="canvasLocation" x="452" y="249"/>
         </scene>
         <!--Career View Controller-->
         <scene sceneID="igK-Bn-cpf">
@@ -162,29 +170,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Career" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGf-0Q-b9t">
-                                <rect key="frame" x="148" y="28" width="127" height="43"/>
+                                <rect key="frame" x="133" y="28" width="127" height="43"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YF9-zK-6CS">
                                 <rect key="frame" x="20" y="88" width="353" height="111"/>
                                 <string key="text">When I get out of high school, I want to go to college to get a degree in Computer Science. I would like to be a computer programmer   and/or a game developer.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="programming" translatesAutoresizingMaskIntoConstraints="NO" id="p6a-hn-G1Z">
-                                <rect key="frame" x="17" y="287" width="359" height="197"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQb-XP-led">
                                 <rect key="frame" x="161" y="536" width="71" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
+                                    <action selector="toIndex:" destination="w7D-4Y-RBc" eventType="touchUpInside" id="yXU-E3-SqH"/>
                                     <segue destination="Q2V-C7-dbA" kind="show" identifier="toIndexFromCareer" id="778-uG-UzL"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="programming" translatesAutoresizingMaskIntoConstraints="NO" id="p6a-hn-G1Z">
+                                <rect key="frame" x="17" y="286" width="359" height="197"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.79309024397241301" green="0.66029356824185936" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -193,10 +202,10 @@
             </objects>
             <point key="canvasLocation" x="-231" y="1030"/>
         </scene>
-        <!--Hobbies View Controller-->
+        <!--Past View Controller-->
         <scene sceneID="WSy-K4-8zR">
             <objects>
-                <viewController id="fw0-iF-XHv" customClass="HobbiesViewController" customModule="AboutMeApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fw0-iF-XHv" customClass="PastViewController" customModule="AboutMeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="d5x-ej-upV"/>
                         <viewControllerLayoutGuide type="bottom" id="Fls-9I-fac"/>
@@ -204,12 +213,39 @@
                     <view key="view" contentMode="scaleToFill" id="rrC-WP-Si1">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Past" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Kg-Kr-oJ9">
+                                <rect key="frame" x="154" y="28" width="80" height="40"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w0B-Ie-yhB">
+                                <rect key="frame" x="24" y="92" width="340" height="177"/>
+                                <string key="text">I was born in Orem, Utah on June 27, 2000 in the Timpanogos Region Hospital. I've moved all over the country and lived in many states such as, Utah, California, Washington, Nevada, Minnesota, Oregon, and Arizona. I am now at Corner Canyon High School and attending CTEC Computer Programming, my favorite class ever.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmT-lo-jZU">
+                                <rect key="frame" x="144" y="544" width="100" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="toIndex:" destination="fw0-iF-XHv" eventType="touchUpInside" id="MN7-KJ-O0w"/>
+                                    <segue destination="Q2V-C7-dbA" kind="show" identifier="toIndexFromPast" id="HuD-SQ-zJs"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1377162099" translatesAutoresizingMaskIntoConstraints="NO" id="pcU-7B-MRQ">
+                                <rect key="frame" x="20" y="291" width="344" height="232"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="0.52717477984171968" green="1" blue="0.43309023221819287" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TkD-TG-8za" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="764" y="1700"/>
+            <point key="canvasLocation" x="154" y="1704"/>
         </scene>
         <!--Friends View Controller-->
         <scene sceneID="Z1t-oZ-z08">
@@ -226,14 +262,14 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Friends" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Obx-bB-UTX">
                                 <rect key="frame" x="143" y="28" width="134" height="48"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WsK-8i-iTc">
                                 <rect key="frame" x="36" y="135" width="348" height="137"/>
                                 <string key="text">I have a lot of friends that care about me and I care about all of them. Some of my friends are Seth, Duncan, Patrick, Rory, Dale, and Zach. These are only just a small number of my friends. I really enjoy being with all my friends and like talking to them.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXX-EJ-kFA">
@@ -241,7 +277,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="Q2V-C7-dbA" kind="show" id="6RY-zP-lBg"/>
+                                    <action selector="toIndex:" destination="0Wx-bK-u7C" eventType="touchUpInside" id="MZz-69-LWk"/>
+                                    <segue destination="Q2V-C7-dbA" kind="show" identifier="toIndexFromFriends" id="6RY-zP-lBg"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="friends" translatesAutoresizingMaskIntoConstraints="NO" id="2gq-3h-dOb">
@@ -253,15 +290,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ake-dS-DVI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1089" y="1030"/>
+            <point key="canvasLocation" x="1165" y="1030"/>
         </scene>
     </scenes>
     <resources>
+        <image name="1377162099" width="1027" height="794"/>
         <image name="computer" width="1300" height="957"/>
         <image name="friends" width="1300" height="866"/>
         <image name="programming" width="3888" height="2592"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="778-uG-UzL"/>
+        <segue reference="6RY-zP-lBg"/>
     </inferredMetricsTieBreakers>
 </document>

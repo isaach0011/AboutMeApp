@@ -10,5 +10,12 @@ import UIKit
 
 class FriendsViewController : UIViewController
 {
-    
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+    }
+    @IBAction func toIndex(sender: UIButton)
+    {
+         performSegueWithIdentifier("toIndexFromFriends", sender: sender)
+    }
 }
